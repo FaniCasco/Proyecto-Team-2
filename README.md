@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+PROYECTO GRUPO 2  
+POLO IT
+LISTA DE EMPRESAS SOCIAS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ESTRUCTURA DEL PROYECTO
 
-## Available Scripts
+src/
+├── components/
+|   ├── CompanyList/
+|   |   ├── Company.js
+|   |   ├── CompanyList.js
+|   |   └── SearchBar.js
+|   ├── CompanyDetail/
+|   |   ├── CompanyDetail.js
+|   |   └── ContactForm.js
+|   └── Header/
+|       ├── Header.js
+|       └── Navigation.js
+├── data/
+|   ├── companies.js
+|   └── categories.js
+|------assets/images
+ |        | -logo
+  |       | - banner
+├── App.js
+└── index.js
 
-In the project directory, you can run:
+Componentes:
+CompanyList.js:
+Contiene la lista de empresas.
+Importa y renderiza el componente Company para cada empresa.
+Puede contener la barra de búsqueda.
+Company.js:
+Muestra la información básica de una empresa (nombre, logo, enlace).
+Puede tener un enlace a la página de detalles de la empresa.
+SearchBar.js:
+Permite buscar empresas por categorías y productos/servicios.
+Puede tener un estado local para gestionar las consultas de búsqueda.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+CompanyDetail.js:
+Muestra información detallada de una empresa.
+Importa y renderiza el componente ContactForm.
+ContactForm.js:
+Contiene un formulario de contacto para la empresa.
+Header.js:
+Contiene la barra de navegación y cualquier información de encabezado.
+Puede tener un enlace al inicio o cualquier otra funcionalidad que desees.
+Navigation.js:
+Contiene enlaces de navegación.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Datos:
+companies.js:
+Contiene datos de empresas (nombre, logo, enlace, detalles, etc.).
+Puedes almacenar información simulada o conectarte a una base de datos real.
+categories.js:
+Contiene datos de categorías y productos/servicios para la barra de búsqueda.
 
-### `npm test`
+Enrutamiento:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Habrá páginas separadas para la lista de empresas y los detalles de la empresa, asi que utilizaremos el enrutamiento con react-router-dom.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
