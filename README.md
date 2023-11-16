@@ -29,10 +29,10 @@ Componentes:
 CompanyList.js:
 Contiene la lista de empresas.
 Importa y renderiza el componente Company para cada empresa.
-Puede contener la barra de búsqueda.
+Barra de búsqueda.
 Company.js:
 Muestra la información básica de una empresa (nombre, logo, enlace).
-Puede tener un enlace a la página de detalles de la empresa.
+Enlace a la página de detalles de la empresa.
 SearchBar.js:
 Permite buscar empresas por categorías y productos/servicios.
 Puede tener un estado local para gestionar las consultas de búsqueda.
@@ -41,18 +41,21 @@ Puede tener un estado local para gestionar las consultas de búsqueda.
 CompanyDetail.js:
 Muestra información detallada de una empresa.
 Importa y renderiza el componente ContactForm.
+
 ContactForm.js:
 Contiene un formulario de contacto para la empresa.
+
 Header.js:
-Contiene la barra de navegación y cualquier información de encabezado.
-Puede tener un enlace al inicio o cualquier otra funcionalidad que desees.
+Contiene la barra de navegación/ información de encabezado.
+
 Navigation.js:
 Contiene enlaces de navegación.
 
 Datos:
 companies.js:
 Contiene datos de empresas (nombre, logo, enlace, detalles, etc.).
-Puedes almacenar información simulada o conectarte a una base de datos real.
+Se conecta a una base de datos real.
+
 categories.js:
 Contiene datos de categorías y productos/servicios para la barra de búsqueda.
 
