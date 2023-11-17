@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.jpg';
-import './Header.css'; // Corregir la importación de CSS
+import './Header.css';
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         <nav>
           <ul>
             <li className="boton-link"><Link to="/" className="nav-link">Inicio</Link></li>
-            <li className="boton-link"><Link to="/about" className="nav-link">Acerca de</Link></li>
+            <li className="boton-link"><Link to="/about" className="nav-link">Acerca</Link></li>
             <li className="boton-link"><Link to="/contact" className="nav-link">Contacto</Link></li>
 
           </ul>
